@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>エアロサービス株式会社</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Yu Gothic', 'メイリオ', Meiryo, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: white;
+        }
+        
+        .header-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .body-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        main {
+            margin-top: 120px; /* ヘッダーの高さ分のマージン（調整可能） */
+        }
+        
+        @media (max-width: 768px) {
+            .header-image,
+            .body-image {
+                width: 100%;
+            }
+            
+            main {
+                margin-top: 80px; /* モバイル用のマージン調整 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- ヘッダー画像（上部固定） -->
+        <header>
+            <img src="header.jpg" alt="エアロサービス株式会社 ヘッダー" class="header-image">
+        </header>
+        
+        <!-- メインコンテンツ画像 -->
+        <main>
+            <img src="body.jpg" alt="エアロサービス株式会社 メインコンテンツ" class="body-image">
+        </main>
+    </div>
+</body>
+</html> 
